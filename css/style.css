@@ -2,9 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
 }
 
-ul,
+ul, 
 ol,
 li {
     list-style: none;
@@ -91,6 +92,154 @@ aside .bottom-aside {
     width: 37%;
 }
 
-.chat-messages-container {
-    width: 60%;
+.chats-container {
+    height: 100%;
+    width: 32%;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #FAFAFA;
+}
+
+.chats-container h3 {
+    width: 100%;
+    padding-inline: 30px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #1DAA61;
+}
+
+.chats-container .search-bar {
+    width: 90%;
+    height: 40px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-inline: 10px;
+    background-color: #F3F3F3;
+}
+
+.chats-container .search-bar img {
+    height: 20px;
+}
+
+.chats-container .search-bar p {
+    color: #D9D9D9;
+}
+
+.chats-container .contacts {
+    flex-grow: 1;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 4px;
+    flex-direction: column;
+}
+
+.chats-container .contacts .contact {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.chats-container .contacts .contact:hover {
+    background-color: #F3F3F3;
+}
+
+.chats-container .contacts .contact img {
+    height: 70%;
+    border-radius: 50%;
+}
+
+.chats-container .contacts .contact .name-message {
+    width: 70%;
+    height: 64%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+}
+
+.chats-container .contacts .contact .name-message h4 {
+    font-size: 24px;
+}
+
+.chats-container .contacts .contact .name-message p {
+    font-size: 20px;
+}
+
+.chats-container .contacts .contact > p {
+    font-size: 16px;
+    margin-top: 24px;
+    align-self: flex-start;
+}
+
+.chat-messages-container{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../assets/img/background.png);
+}
+
+.chat-messages-container nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-inline: 50px;
+    background-color: #F3F3F3;
+}
+
+.chat-messages-container nav .info-contact {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.chat-messages-container nav .info-contact img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.chat-messages-container nav .info-contact .number-more {
+    height: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+}
+
+.chat-messages-container nav .info-contact .number-more h3 {
+    font-size: 26px;
+}
+
+.chat-messages-container nav .buttons-messages {
+    width: 7%;
+    display: flex;
+    justify-content: space-between  ;
+    align-items: center;
+}
+
+.chat-messages-container .container-messages {
+    flex-grow: 1;
+}
+
+.chat-messages-container .container-send-message {
+    height: 100px;
+    background-color: aqua;
 }
